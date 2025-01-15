@@ -1,7 +1,16 @@
 ﻿
-function Home() {
+interface homeHome{
+titulo: string
+texto: string
+}
+
+function Home(props: homeHome) {
   return (
-    <div>Componente Home</div>
+    <div>
+      <h1>Componente Home</h1>
+      <h2>{props.titulo}</h2>
+      <p>{props.texto}</p>
+      </div>
   )
 }
 
